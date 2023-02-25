@@ -14,13 +14,23 @@ function PuzzleHeader({ siderBreakPoint, setPuzzleData, content }) {
         </div>
       </div>
       <div className="puzzle-header-right">
-        <h6
-          className="puzzle-nav"
-          onClick={() => setPuzzleData((prev) => ({ ...prev, about: true }))}
-        >
-          About
-        </h6>
-        {siderBreakPoint === 0 && <PuzzleDrawer>{content}</PuzzleDrawer>}
+        {!localStorage.getItem("admin") && (
+          <h6
+            className="puzzle-nav"
+            onClick={() => setPuzzleData((prev) => ({ ...prev, about: true }))}
+          >
+            About
+          </h6>
+        )}
+        {siderBreakPoint === 0 && (
+          <PuzzleDrawer>
+            {localStorage.getItem("admin") === "0" ? (
+              <h3 style={{ padding: 16 }}>Admin Panel</h3>
+            ) : (
+              content
+            )}
+          </PuzzleDrawer>
+        )}
       </div>
     </Header>
   );
