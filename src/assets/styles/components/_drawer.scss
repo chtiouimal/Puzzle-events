@@ -1,0 +1,65 @@
+.puzzle-drawer-action {
+    height: 100%;
+    width: 80px;
+    border-left: 1px solid $border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .anticon {
+        font-size: 20px;
+    }
+}
+
+.ant-drawer {
+    height: calc(100vh - 80px);
+    .ant-drawer-content {
+        background-color: $black;
+        .ant-drawer-title {
+            color: $white;
+        }
+    }
+    .ant-drawer-body {
+        padding: 0;
+        height: calc(100% - 80px);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .puzzle-drawer-header {
+            width: 100%;
+            display: flex;
+            .puzzle-user {
+                border-right: 1px solid $border;
+                .ant-dropdown-trigger {
+                    justify-content: flex-start;
+                }
+            }
+            .puzzle-drawer-close {
+                cursor: pointer;
+                min-width: 80px;
+                height: 80px;
+                border-bottom: 1px solid $border;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                &:hover {
+                    border-color: $primary-border;
+                    .anticon svg {
+                        fill: $primary;
+                    }
+                }
+                .anticon {
+                    font-size: 20px;
+                }
+            }
+        }
+        .puzzle-auth {
+            button {
+                border-left: 0;
+                &:hover {
+                    border-bottom: 1px solid;
+                }
+            }
+        }
+    }
+}

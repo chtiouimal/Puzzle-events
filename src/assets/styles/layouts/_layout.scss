@@ -1,0 +1,36 @@
+.ant-layout,
+.puzzle-main-layout,
+.puzzle-sub-layout,
+.puzzle-main-layout .ant-layout-sider,
+.puzzle-main-layout .ant-layout-header,
+.puzzle-main-layout .ant-layout-footer {
+    background-color: transparent;
+}
+
+.puzzle-main-layout {
+    height: 100vh;
+    display: flex;
+}
+
+.puzzle-sub-layout {
+    height: 100%;
+
+    .ant-layout-header,
+    .ant-layout-footer {
+        padding: 0;
+        height: 80px;
+        min-height: 80px;
+    }
+}
+
+.puzzle-landing,
+.puzzle-game-content {
+    padding: 16px;
+}
+
+.puzzle-game-content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+

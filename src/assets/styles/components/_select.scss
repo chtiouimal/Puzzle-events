@@ -1,0 +1,38 @@
+.puzzle-select .ant-select-selector {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid $border !important;
+    border-radius: 0 !important;
+}
+
+.ant-select-dropdown {
+    border-radius: 0;
+    background-color: $black;
+    border: 1px solid $border;
+    .ant-select-item  {
+        &:hover {
+            background-color: $primary;
+            border-radius: 0;
+            .ant-select-item-option-content {
+                color: $black;
+            }
+        }
+    }
+
+    .ant-select-item-option-selected {
+        background-color: transparent;
+        .ant-select-item-option-content {
+            color: $primary;
+        }
+    }
+}
+
+.ant-select-dropdown .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    background-color: transparent;
+    &:hover {
+        background-color: $primary;
+        .ant-select-item-option-content {
+            color: $black;
+        }
+    }
+}

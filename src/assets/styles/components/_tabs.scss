@@ -1,0 +1,41 @@
+.puzzle-tabs {
+    height: 100%;
+    .ant-tabs-nav {
+        height: 80px;
+        border-bottom: 1px solid $border;
+        margin: 0;
+        .ant-tabs-nav-list  {
+            .ant-tabs-tab {
+                min-width: 144px;
+                padding: 0 16px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-right: 1px solid $border;
+                margin: 0;
+                .ant-tabs-tab-btn {
+                    font: $small-link;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+            .ant-tabs-tab-active {
+                .ant-tabs-tab-btn {
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .ant-tabs .ant-tabs-content {
+        height: 100%;
+        .ant-tabs-tabpane {
+            height: 100%;
+        }
+    }
+}
+
+.ant-tabs .ant-tabs-ink-bar {
+    position: absolute;
+    background: $primary;
+    pointer-events: none;
+}

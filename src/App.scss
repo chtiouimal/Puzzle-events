@@ -1,0 +1,23 @@
+@import "./assets/styles/variables/colors";
+@import "./assets/styles/variables/fonts";
+
+@import "./assets/styles/globals";
+
+@import "./assets/styles/layouts/footer";
+@import "./assets/styles/layouts/header";
+@import "./assets/styles/layouts/layout";
+@import "./assets/styles/layouts/sider";
+@import "./assets/styles/layouts/content";
+
+@import "./assets/styles/components/input";
+@import "./assets/styles/components/select";
+@import "./assets/styles/components/user";
+@import "./assets/styles/components/board";
+@import "./assets/styles/components/tile";
+@import "./assets/styles/components/drawer";
+@import "./assets/styles/components/dropdown";
+@import "./assets/styles/components/tabs";
+@import "./assets/styles/components/table";
+
+@import "./features/auth/auth";
+@import "./features/admin/admin";

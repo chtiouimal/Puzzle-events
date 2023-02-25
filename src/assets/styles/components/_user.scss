@@ -1,0 +1,41 @@
+.puzzle-user {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    .puzzle-btn-active {
+        border-bottom-color: $primary-border;
+        color: $primary;
+    }
+
+    button {
+        width: 50%;
+        border-bottom: 1px solid $border;
+        &:first-child {
+            border-right: 1px solid $primary-border;
+        }
+    }
+
+    .puzzle-username {
+        height: 100%;
+        width: 100%;
+        border-bottom: 1px solid $border;
+        &:hover {
+            border-color: $primary-border;
+        }
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+    .ant-dropdown-trigger {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+        align-items: center;
+        padding: 0 16px;
+    }
+}
+
+

@@ -1,0 +1,31 @@
+.ant-dropdown {
+    color: $white;
+    top: 80px !important;
+    .ant-dropdown-menu {
+        background-color: $black;
+        border-radius: 0;
+        padding: 0;
+        .ant-dropdown-menu-item {
+            border-radius: 0;
+            border-bottom: 1px solid $border;
+            border-right: 1px solid $border;
+            padding: 0 16px;
+            .puzzle-nav {
+                height: 80px;
+                display: flex;
+                align-items: center;
+            }
+            &:hover {
+                background-color: $primary;
+                .puzzle-nav {
+                    color: $black;
+                    font-weight: 700;
+                    .anticon svg {
+                        fill: $black;
+                    }
+                }
+            }
+        }
+    }
+}
+

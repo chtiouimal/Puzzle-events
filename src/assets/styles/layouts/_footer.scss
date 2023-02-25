@@ -1,0 +1,20 @@
+.puzzle-footer {
+    border-top: 1px solid $border;
+    display: flex;
+    justify-content: flex-start;
+    ul {
+        margin: 0;
+        padding: 0 16px;
+        list-style: none;
+        height: 100%;
+        display: flex;
+        gap: 16px;
+        width: 100%;
+
+        li {
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+    }
+}

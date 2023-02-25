@@ -1,0 +1,88 @@
+body {
+    background-color: $black;
+}
+
+* {
+    color: $white;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a , .puzzle-nav {
+    font: $small-link;
+    color: $white;
+    opacity: 0.6;
+    text-transform: uppercase;
+
+    &:hover {
+        opacity: 1;
+        color: $white;
+    }
+}
+
+p {
+    font: $small-text;
+    color: $white;
+    text-transform: uppercase;
+}
+
+h6 {
+    font: $small-text;
+    color: $white;
+    opacity: 0.4;
+    text-transform: uppercase;
+}
+
+h4 {
+    font: $small-title;
+    color: $white;
+}
+
+h3 {
+    font: $title;
+    color: $white;
+
+    span {
+        color: $primary;
+        font: inherit;
+    }
+}
+
+button,
+.ant-btn, .puzzle-btn {
+    padding: 0 32px;
+    height: 80px;
+    border: none;
+    border-color: $border;
+    background-color: transparent;
+    font: $small-link;
+    text-transform: uppercase;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.puzzle-page {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 80px);
+    justify-content: flex-end;
+    gap: 32px;
+}

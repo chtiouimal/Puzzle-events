@@ -1,0 +1,120 @@
+.puzzle-table {
+    background-color: transparent;
+    .ant-table-container table>thead>tr:first-child>*:first-child {
+        border-start-start-radius: 0;
+    }
+    .ant-table-thead>tr>th {
+        background-color: transparent;
+        color: $white;
+        font: $small-link;
+        text-transform: uppercase;
+        height: 80px;
+    }
+    .ant-table-tbody>tr>td {
+        border-bottom: 1px solid $border;
+        height: 80px;
+    }
+    .ant-table {
+        border-radius: 0;
+        background-color: transparent;
+        .ant-table-container {
+            border-start-start-radius: 0;
+            border-start-end-radius: 0;
+        }
+    }
+}
+
+.ant-table-wrapper table {
+    border-radius: 0;
+}
+
+.ant-table-wrapper .ant-table-tbody>tr.ant-table-row:hover>td,
+.ant-table-wrapper .ant-table-tbody>tr>td.ant-table-cell-row-hover {
+    background: transparent;
+    border-color: $primary-border;
+}
+
+.ant-table-wrapper .ant-table-thead>tr>th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before,
+.ant-table-wrapper .ant-table-thead>tr>td:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before {
+    position: absolute;
+    top: 50%;
+    inset-inline-end: 0;
+    width: 1px;
+    height: 100%;
+    background-color: $border;
+    transform: translateY(-50%);
+    transition: background-color 0.2s;
+    content: "";
+}
+
+.ant-table-wrapper .ant-table-pagination.ant-pagination {
+    margin: 0;
+    li, .ant-pagination-item {
+        height: 80px;
+        width: 80px;
+        border-radius: 0 !important;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: $white;
+            font: $link;
+        }
+        .anticon svg {
+            fill: $primary;
+        }
+    }
+    .ant-pagination-disabled {
+        .anticon svg {
+            fill: $border;
+        }
+    }
+}
+
+.ant-pagination .ant-pagination-item-active {
+    font-weight: 600;
+    background-color: transparent;
+    border-color: $border;
+    border-top: none;
+    a {
+        color: $primary-border;
+        font: $link;
+    }
+    &:hover {
+        border: 1px solid $border;
+        border-color: $primary-border;
+        a { 
+            color: $primary;
+        }
+    }
+}
+
+.ant-table-wrapper .ant-table-pagination.ant-pagination li,
+.ant-table-wrapper .ant-table-pagination.ant-pagination .ant-pagination-item {
+    border-top: none;
+    border-color: $border;
+    &:hover {
+        // border: 1px solid $border;
+        border-color: $primary-border;
+    }
+}
+
+.ant-pagination-prev 
+{border: 1px solid $border;
+    border-top: none;
+    border-right: none;
+}
+
+.ant-pagination-next {
+    border: 1px solid $border;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+.ant-pagination-next, .ant-pagination-prev {
+    &:hover {
+        border-color: $primary-border;
+    }
+}

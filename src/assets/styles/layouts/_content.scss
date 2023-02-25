@@ -1,0 +1,39 @@
+.puzzle-about {
+    height: 100%;
+    padding: 16px;
+
+    .puzzle-hero {
+        position: relative;
+        height: 100%;
+    }
+
+    .puzzle-hero-video {
+        height: 100%;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .puzzle-hero-content {
+        position: absolute;
+        bottom: 64px;
+        left: 64px;
+
+        button {
+            border: 1px solid $border;
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            background-color: $border;
+            border-color: $primary-border;
+            font-weight: 700;
+            &:hover {
+                border-color: $primary;
+                color: $primary;
+            }
+        }
+    }
+}
