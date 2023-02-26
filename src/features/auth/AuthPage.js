@@ -8,14 +8,14 @@ function AuthPage() {
 
   return (
     <div className="puzzle-auth-layout">
-      <div className="puzzle-auth-header">
+      {/* <div className="puzzle-auth-header">
         <div className="puzzle-auth-desc">
           <p>
             ost hanc adclinis Libano monti Phoenice, regio plena gratiarum et
             venustatis.
           </p>
         </div>
-      </div>
+      </div> */}
       {puzzleData.hasAccount ? (
         <SignIn setPuzzleData={setPuzzleData} />
       ) : (

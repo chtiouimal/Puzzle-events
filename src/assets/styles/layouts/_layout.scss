@@ -34,3 +34,8 @@
     align-items: flex-start;
 }
 
+@media (max-width: 767px) {
+    .puzzle-main-layout {
+        height: calc(var(--vh, 1vh) * 100);
+    }
+}

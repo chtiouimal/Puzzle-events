@@ -9,3 +9,9 @@
 .ant-layout-sider {
     height: 100vh;
 }
+
+@media (max-width: 767px) {
+    .ant-layout-sider {
+        height: calc(var(--vh, 1vh)  * 100);
+    }
+}
