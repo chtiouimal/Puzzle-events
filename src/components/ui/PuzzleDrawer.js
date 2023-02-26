@@ -24,9 +24,9 @@ function PuzzleDrawer({ children }) {
           {open ? <MenuFoldOutlined /> : <MenuUnfoldOutlined />}
         </span>
       ) : (
-        <span className="puzzle-drawer-action" onClick={showDrawer}>
+        <h6 className="puzzle-drawer-action" onClick={showDrawer}>
           Auth
-        </span>
+        </h6>
       )}
       <Drawer
         closable={false}

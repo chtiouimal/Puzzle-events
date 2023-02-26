@@ -32,11 +32,11 @@ export const getBoardSize = (lw, lh, w) => {
   }
 
   if (lw < lh) {
-    if (w < lh && w >= lh - 288) {
+    if (w < lh && w >= lh - 160) {
       return w - 288;
     }
 
-    if (lw >= lh - 288) {
+    if (lw >= lh - 160) {
       return lw;
     }
     if (lh - 288 >= lw && w >= lh) {
