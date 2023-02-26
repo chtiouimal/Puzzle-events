@@ -793,6 +793,9 @@ input:-webkit-autofill {
   justify-content: space-between;
   gap: 16px;
 }
+.puzzle-group-items .ant-form-item-control-input-content > div {
+  width: 50%;
+}
 
 .puzzle-admin-page {
   height: calc(100% - 160px);
